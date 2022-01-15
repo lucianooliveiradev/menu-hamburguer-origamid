@@ -17,10 +17,10 @@
 
 .introducao h1::before{
     content: "";
-    display: block;
+    /* display: block; */
     width: 130px;
     height: 100px;
-    background: url('../img/detalhe.svg') no-repeat center;
+    /* background: url('../img/detalhe.svg') no-repeat center; */
     position: absolute;
     top: -15px;
     left: -40px;
@@ -30,6 +30,11 @@
 .introducao p {
     font-size: 1.5rem;
 }
+
+.introdução > img{
+    display: none;
+}
+
 
 @media (max-width: 1000px){
     .introducao h1 {
@@ -50,13 +55,15 @@
         height: 10px;
         left: 0;
     }
+
 }
 
-@media (max-width: 400px){
+@media (max-width: 500px){
     .introducao {
         grid-template-columns: 1fr;;
     }
-    .introducao img{
-        display: none;
+
+    .introducao img {
+        width: 100vw;
     }
 }

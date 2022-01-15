@@ -8,7 +8,7 @@
 }
 
 .experiencia .subtitulo {
-    color: #e0e0e0;
+    color: #0e0d0d;
 }
 
 .experiencia-texto {
@@ -97,11 +97,13 @@
         position: initial;
         order: 1;
         width: initial;
-        text-align: left;
-        font-weight: 700;
+        text-align: center;
+        align-items: center;
+        font-weight: 900;
     }
     .empresa-ano::before{
         content: 'Ano: ';
+        align-items: center;
     }
 }
 
@@ -109,4 +111,6 @@
     .empresa{
         grid-template-columns: 1fr;
     }
+
+    
 }
